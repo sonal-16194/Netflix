@@ -7,7 +7,7 @@
     height:700px;
     width: 100%;           
     background-size: cover;       
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("background-img.jpg"); 
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("images/header-image.png"); 
     background-position: center; 
     position: relative; 
     cursor: pointer;
@@ -235,7 +235,7 @@
 }
 /** accordion section**/
 .faq-text {
-    height:830px;
+    height:575px;
     width:100%;
     padding:70px 0px;
     background-color:black;
@@ -259,7 +259,7 @@
     max-width:1050px;
 }
 .accordion li{
-    height: 100px;
+    
     list-style:none;    
     width: 100%;
     padding:5px;
@@ -270,20 +270,20 @@
     font-family: sans-serif;
     display:flex;
     align-items: center;
-    padding:35px;
-    font-size:24px;
+    padding:20px;
+    font-size:18px;
     font-weight: 500;
     background-color: #303030;
     cursor: pointer;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     position: relative;
-}
-label::after {
+ }
+ label::after {
     content: "+";
     font-size:34px;
     position:absolute;
     right: 20px;
-    transition: transform 0.5s;
+    transition:transform 0.5s;
 }
 input[type="radio"]{
     display: none;
@@ -292,9 +292,10 @@ input[type="radio"]{
     background:#303030;
     text-align: left;
     padding:0 20px;
-    max-height: 0px;
+    max-height: 0;
     overflow:hidden;
-    transition: max-height 0.5s, padding 0.5s;
+    /* transition: max-height  0.5s, padding 0.5s;
+     */
 }
 .accordion input[type="radio"]:checked +label +.content {
     max-height: 600px;
@@ -303,8 +304,8 @@ input[type="radio"]{
 .accordion input[type="radio"]:checked + label::after {
     transform: rotate(135deg);
 }
-/** email address**/
-.email-content {
+ /* email address*/ 
+ .email-content {
     height:100px;
     width: 100%;
     background-color: black;
@@ -315,9 +316,11 @@ input[type="radio"]{
 }
 .email-content h3 {
     text-align: center;
+    font-size: 24px;
+    font-weight: 350;
 
-}
-/** footer-last part **/
+} 
+/* footer-last part **/
 .footer-head {
     background-color: black;
     color:white;
@@ -372,7 +375,7 @@ input[type="radio"]{
     color:#ffffffb3;
     font-size: 14px;
     font-weight: 500;
-}
+} 
 
 
 
